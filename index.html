@@ -262,29 +262,29 @@ var SORTIES={
  d_rien:{p:"Vous n'aviez peut-être rien à chercher.",
   e:"Le théâtre ne répare personne. Il rend seulement visible ce qui était déjà là.",
   d:"Comment je travaille",u:D+"#approche"},
- m_equipes:{p:"Une équipe qui ne se parle pas n'a pas un problème de communication.<br>Elle a appris à se protéger.",
+ m_equipes:{p:"Une équipe qui ne se parle pas a rarement un problème de communication.<br>Le plus souvent, elle a appris à se protéger.",
   e:"Ce qui remontera ne sera pas forcément ce que vous vouliez voir. C'est à cette condition que quelque chose bouge.",
   d:"Dynamiques d'équipe",u:M+"#services"},
- m_seminaire:{p:"Un séminaire où l'on regarde des slides ne change rien.<br>Un séminaire où l'on fait quelque chose ensemble, si.",
+ m_seminaire:{p:"Une journée passée à écouter s'oublie assez vite.<br>Une journée passée à faire quelque chose ensemble, non.",
   e:"Il faut du temps, et il faut que vous soyez là comme les autres. Pas au fond de la salle, à regarder.",
-  d:"Séminaires d'équipe",u:M+"#services"},
+  d:"Le projet commun",u:M+"#services"},
  m_parole:{p:"Il ne s'agit pas d'apprendre à parler en public.<br>Il s'agit de devenir celui qui parle.",
   e:"Vos mots ne sont pas le problème. C'est ce qui se passe en vous, dans votre corps, pendant que vous les dites — et ça ne se corrige pas sur le papier.",
   d:"Prise de parole en public",u:M+"#services"},
  m_dirigeant:{p:"Personne ne vous dit ce que vous auriez pu faire autrement.<br>Les questions s'accumulent, sans interlocuteur.",
   e:"Ce n'est ni du conseil ni de la thérapie. C'est quelqu'un avec qui reprendre, régulièrement, dans la durée.",
-  d:"Accompagnement des dirigeants",u:M+"#services"},
+  d:"Diriger, moins seul",u:M+"#services"},
  m_situations:{p:"Personne ne se voit travailler.<br>On se raconte comment on travaille — ce n'est pas la même chose.",
   e:"Il faudra accepter d'être vu par ses collègues en train de s'y prendre mal. C'est précisément là que ça sert.",
   d:"Mises en situation théâtrales",u:M+"#services"},
- m_surmesure:{p:"Il n'y a pas de programme à vous vendre.<br>Il y a votre situation, et ce qu'on en fait.",
+ m_surmesure:{p:"Il n'y a pas de programme écrit d'avance.<br>Il y a votre situation, et ce qu'on en fait.",
   e:"Ça demande de décrire précisément ce qui se passe chez vous — pas la version officielle, celle qu'on raconte à l'extérieur. C'est souvent le pas le plus difficile.",
-  d:"Ateliers sur mesure",u:M+"#services"},
+  d:"Ateliers écrits pour vous",u:M+"#services"},
  m_processus:{p:"Avant de savoir quoi, vous voulez sans doute savoir comment.",
   e:"Ça commence toujours par un échange où vous parlez et où je ne propose rien.",
   d:"Comment ça se passe",u:M+"#processus"},
  m_rien:{p:"Vous n'êtes peut-être pas venu chercher un prestataire.",
-  e:"La question que vous venez d'écrire vaut plus que n'importe quelle intervention. Gardez-la telle quelle.",
+  e:"La question que vous venez d'écrire vaut plus que n'importe quel atelier. Gardez-la telle quelle.",
   d:"Un premier échange, trente minutes",u:M+"#contact"}
 };
 function vitrine(){
@@ -377,7 +377,7 @@ function envers(k){
   salle(0,2);fond(.02,2);GLOW.classList.remove("on");clear();
   T(function(){
     L1.innerHTML="Avant d'aller plus loin.";L1.classList.add("in");
-    L2.innerHTML="Rien de ce qui est proposé ici ne réglera quoi que ce soit à votre place. Un atelier est un outil. Un stage est un outil. Une intervention en entreprise est un outil.<br><br>Un outil au service de quoi, au fait ?";
+    L2.innerHTML="Rien de ce qui est proposé ici ne réglera quoi que ce soit à votre place. Un atelier est un outil. Un stage est un outil. Deux jours en entreprise sont un outil.<br><br>Un outil au service de quoi, au fait ?";
     L2.classList.add("in");
   },400);
   T(function(){choix([["je continue","go"]],function(){salle(.022,3);fond(.045,3);sortie(k);});},5200);
